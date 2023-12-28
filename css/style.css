@@ -1,0 +1,228 @@
+/* định dạng chung */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* định dạng exp-bar */
+.exp-bar {
+  width: 50px;
+  height: 4px;
+  background-color: #339af0;
+  display: inline-block;
+}
+.fill {
+  background-color: #ced4da;
+}
+/* định dạng icon */
+.icon {
+  color: #339af0;
+}
+/* .person1 {
+  font-size: 18px;
+}
+.person2 {
+  font-size: 7px;
+  color: #ced4da;
+} */
+/* định dạng mark */
+mark {
+  background-color: #339af0;
+  color: white;
+  padding: 2px;
+  border-radius: 10%;
+}
+/* sử dụng pseudo elements selectors để tạo dấu chấm trước các tittle */
+.timeline .timeline-content {
+  position: relative;
+  padding-left: 20px;
+}
+.timeline .tittle::before {
+  content: "\2022";
+  position: absolute;
+  font-size: 1.5em;
+  color: #339af0;
+  left: -5px;
+  top: -5px;
+}
+/* định dạng banner */
+.banner {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url(../images/banner.jpg);
+  background-size: cover;
+  position: relative;
+  height: 450px;
+  width: 100%;
+}
+.banner-tittle {
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner-tittle span {
+  font-size: 10px;
+}
+/* định dạng navbar */
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.navbar-item {
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+  width: 145px;
+  height: 50px;
+  font-size: 9px;
+}
+.navbar-item a:hover {
+  cursor: pointer;
+}
+.img-avatar {
+  transform: scale(7);
+  border: 1px solid #e9ecef;
+  border-radius: 50%;
+}
+/* định dạng mục thông tin cá nhân */
+.infotarget {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.target {
+  margin: 50px 40px 10px 30px;
+  line-height: 1.4;
+}
+.info {
+  margin: 50px 40px 10px 30px;
+  line-height: 1.4;
+}
+.info ul {
+  list-style-type: none;
+}
+.info-icon {
+  padding: 20px;
+}
+.infotarget-tittle {
+  padding-bottom: 20px;
+}
+/* định dạng thông tin nghề nghiệp */
+.person-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin: 44px 200px 10px 200px;
+}
+.section {
+  border: 1px solid #9e717128;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 100px auto;
+}
+.section-icon {
+  font-size: 50px;
+}
+.content {
+  grid-column: 1/-1;
+  margin: 30px 10px;
+  line-height: 1.4;
+}
+.section-tittle,
+.section-icon {
+  margin: 20px;
+}
+/* định dạng thông tin nghề nghiệp mục sở thích */
+.hooby-icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 44px 30px;
+  row-gap: 10px;
+}
+.iconlike {
+  color: #339af0;
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #339af0;
+  border-radius: 50%;
+  padding-top: 6px;
+  padding-left: 4px;
+}
+/* định dạng phần chứng chỉ - giải thưởng */
+.certificate {
+  margin: 40px 200px 60px 200px;
+}
+.certificate-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+.card {
+  display: flex;
+  margin: 10px;
+}
+.card img {
+  flex: 0.35;
+  object-fit: contain;
+  padding: 10px;
+}
+.card-text {
+  flex: 0.7;
+  font-size: 12px;
+}
+.card-text h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+/* định dạng phần dự án */
+.project-container {
+  margin: 10px 200px 40px 200px;
+}
+.section-project-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.project-tittle {
+  font-size: 14px;
+  padding: 20px;
+}
+.sub-tittle {
+  padding: 10px;
+}
+.project img {
+  width: 100%;
+}
+table,
+th,
+td {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+/* định dạng phần liên hệ */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
